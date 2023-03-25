@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bs-css/bootstrap.css">
+  <link rel="stylesheet" href="css/form_new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/animate.css">
+  <title>Form</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<style>
+  button {
+      margin-left: -10px;
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+  }
+</style>
+
+
+<body>
+  <section class="form-1 animated fadeInRight" data-wow-delay="0.6s" >
+    <div class="form-header">
+      <div class="col-1 back-up-div">
+        <a href="index.html" class="btn"><i class="fa-solid fa-angles-left up-back"></i></a>
+      </div>
+      <h2 class="text-center">SEDS SPACE ART 2022</h2>
+      <h3 class="text-center">SUBMISSION Form</h3>
+    </div>
+    <div class="container rules" id="rulesList">
+      <div class="row" style="padding: 60px;">
+        <div class="col-md-6 col-sm-12 form-txt-1">
+          <h4 style="font-weight: bold;">Rules and Regulation</h4><hr>
+          <div class="r">
+            <h5 class="ruleNo">1</h5><h6>One contestant can submit either one or a maximum of three artworks, but only one artwork should be submitted under one theme.</h6>
+          </div>
+          <div class="r">
+            <h5 class="ruleNo">2</h5><h6>If a contestant submit more than 1 artwork on same theme last submission will be accounted for evaluation.</h6>
+          </div>
+          <div class="r">
+            <h5 class="ruleNo">3</h5><h6>Submissions under the open theme will not be considered when selecting contest winners. They will be displayed in the gallery.</h6>
+          </div>
+          <small id="time">Time</small>
+        </div>
+        
+        <div class="col-md-6 col-sm-12 form-pt-1">
+      
+          <!-- <form> -->
+            <div class="form-group">
+              <input type="text" placeholder="Email*" required class="form-control field" id="email">
+              <small id="emailError">Email Error</small>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Full Name*" required class="form-control field" id="fname">
+              <small id="fnameError">Email Error</small>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Chapter Name*" required class="form-control field" id="cname">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Country*" required class="form-control field" id="country">
+              <small id="countryError">Email Error</small>
+            </div>
+            <div class="form-group">
+              <label for="division">Division</label>
+              <select name="" id="division" class="form-control">
+                <option value="">Select Age</option>
+                <option value="under_10">Under 10</option>
+                <option value="Age_11-18">Age 11-18</option>
+                <option value="Age_19+">Age 19+</option>
+              </select>
+              <small id="divisionError">Email Error</small>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="School /Organization*" required class="form-control field" id="school">
+            </div>
+            <!-- <div class="next"><button class="btn nxt">Next</button></div> -->
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Art work 1 -->
+  <section class="form-2  animated fadeInLeft" data-wow-delay="0.6s" style="margin-top: -50px;">
+    <div class="container">
+      <div class="row" style="padding: 60px;">
+        <div class="col-md-6 col-sm-12 form-pt-2">
+          <h6>Your First Artwork <span>(</span>Required<span>)</span></h6>
+          <!-- <form > -->
+            <div class="form-group">
+              <label for="theme">Theme</label>
+              <select id="theme1" class="select-group">
+                <option value="">Select Theme</option>
+                <option value="open">open</option>
+                <option value="theme-1">theme 1</option>
+                <option value="theme-2">theme 2</option>
+                <option value="theme-3">theme 3</option>
+              </select>
+              <small id="theme1Error">Email Error</small>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Topic*" required class="form-control field" id="topic1">
+              <small id="topic1Error">Email Error</small>
+            </div>
+            <div class="form-group">
+              <textarea name="" id="desc1" cols="62" rows="4" class="form-control field" placeholder="Description"></textarea>
+            </div>
+            <div class=" select">
+              <div class="row">
+                <div class="col-md-5">
+                  <button class="btn btn-outline-dark" id="choose">Choose File</button>
+                </div>
+                <div class="col-md-7 img-name">
+                  <input type="text" id="img-name"placeholder="Image-name*" required class="form-control field">
+                  <label for="extention" id="ext"></label>
+                </div>
+                <small id="file1Error">File error</small>
+              </div>
+            </div>
+
+          <!-- </form> -->
+        </div>
+        <div class="col-md-6 col-sm-12 prev">
+         
+          <div class="artwork">
+            <img id="myimg" class="mx-auto d-block img-fluid">
+          </div>
+          <div class="progress">
+            <label for="progress" id="progress"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- advice -->
+  <section class="advice">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 optional" >
+          <h6>You can upload additional artworks by pressing <span style="font-weight: bold;">+</span> mark</h6>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8 optional">
+        <h6>
+          <button onclick="myFunctionOne()"> <span style="font-weight: bold;">+</span> Your 2nd Art work (Optional)</button>
+        </h6>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- ART WORK 2 -->
+ <section class="form-2" id="art-work-2" style="margin-top: -50px;"> 
+  <div class="container">
+    <div class="row" style="padding: 60px;">
+      <div class="col-md-6 col-sm-12 form-pt-2">
+        <h6>Your 2nd Artwork <span>(</span>Optional<span>)</span></h6>
+        <form >
+          <div class="form-group">
+            <select id="theme-2" class="select-group">
+              <option value="">Select Theme</option>
+              <option value="open">open</option>
+              <option value="theme-1">theme 1</option>
+              <option value="theme-2">theme 2</option>
+              <option value="theme-3">theme 3</option>
+            </select>
+            <small id="theme2Error">Email Error</small>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Topic*" required class="form-control field" id="topic-2">
+            <small id="topic2Error">Email Error</small>
+          </div>
+          <div class="form-group">
+            <textarea name="" id="desc-2" cols="62" rows="4" class="form-control field" placeholder="Description"></textarea>
+          </div>
+          <div class=" select">
+            <div class="row">
+              <div class="col-md-5">
+                <button class="btn btn-outline-dark" id="choose-2">Choose File</button>
+              </div>
+              <div class="col-md-7 img-name">
+                <input type="text" id="img-name-2"placeholder="Image-name*" required class="form-control field">
+                <label for="extention" id="ext-2"></label>
+              </div>
+              <small id="file2Error">File error</small>
+            </div>          
+          </div>
+          
+      </form>
+      </div>
+      <div class="col-md-6 col-sm-12 prev">
+       
+        <div class="artwork">
+          <img id="myimg-2" class="mx-auto d-block img-fluid">
+        </div>
+        <div class="progress">
+          <label for="progress" id="progress-2"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8 optional">
+      <h6>
+        <button onclick="myFunctionTwo()"> <span style="font-weight: bold;">+</span> Your 3rd Art work (Optional)</button>
+      </h6>
+    </div>
+  </div>
+</div>
+
+
+<!-- ART WORK 3 -->
+
+<section class="form-2" id="art-work-3" style="margin-top: -50px;">
+  <div class="container">
+    <div class="row" style="padding: 60px;">
+      <div class="col-md-6 col-sm-12 form-pt-2">
+        <h6>Your 3rd Artwork <span>(</span>Optional<span>)</span></h6>
+        <form >
+          <div class="form-group">
+            <select id="theme-3" class="select-group">
+              <option value="">Select Theme</option>
+              <option value="open">open</option>
+              <option value="theme-1">theme 1</option>
+              <option value="theme-2">theme 2</option>
+              <option value="theme-3">theme 3</option>
+            </select>
+            <small id="theme3Error">Email Error</small>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Topic*" required class="form-control field" id="topic-3">
+            <small id="topic3Error">Email Error</small>
+          </div>
+          <div class="form-group">
+            <textarea name="" id="desc-3" cols="62" rows="4" class="form-control field" placeholder="Description"></textarea>
+          </div>
+          <div class=" select">
+            <div class="row">
+              <div class="col-md-5">
+                <button class="btn btn-outline-dark" id="choose-3">Choose File</button>
+              </div>
+              <div class="col-md-7 img-name">
+                <input type="text" id="img-name-3"placeholder="Image-name*" required class="form-control field">
+                <label for="extention" id="ext-3"></label>
+              </div>
+              <small id="file3Error">File error</small>
+            </div>        
+          </div>
+          
+        </form>
+      </div>
+      <div class="col-md-6 col-sm-12 prev">
+       
+        <div class="artwork">
+          <img id="myimg-3" class="mx-auto d-block img-fluid">
+        </div>
+        <div class="progress">
+          <label for="progress" id="progress-3"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<section class="agreement">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <input class="form-check-input" type="checkbox" value="" id="agreement">
+        <label class="form-check-label" for="agreement">
+          <p>I have read, understand, and agree to the above rules and regulations. <a href="#rulesList"> Rules and Regulations</a></p>
+        </label>
+      </div>
+      <small id="agreementError">Agreement Error</small>
+    </div>
+  </div>
+</section>
+
+
+  <div class="submit-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 sub">
+          <a href="index.html" class="btn btn-back">Back</a>
+          <a class="btn btn-submit" id="submit">Submit</a>     
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- Model-progress -->
+  <div class="modal" id="basicModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6><span style="color: red;">Note:</span> Please be patient till all the files are uploaded. and then click <span class="text-primary">Finish</span></h6>
+        </div>
+        <div class="modal-body">
+              <div id="myProgress1">
+                <div id="myBar1">
+                  <p id="up1">Uploading...</p>
+                  <p id="val1" style="color: #fff;"></p>
+                </div>
+              </div>
+              <div id="myProgress2">
+                <div id="myBar2">
+                  <p id="up2">Uploading...</p>
+                  <p id="val2" style="color: #fff;"></p>
+                </div>
+              </div>
+              <div id="myProgress3">
+                <div id="myBar3">
+                  <p id="up3">Uploading...</p>
+                  <p id="val3" style="color: #fff;"></p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-primary" id="close">Finish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/mainForm.js" type="module"></script>
+
+  <script src="bs-jss/jquery.js"></script>
+  <script src="bs-jss/bootstrap.js"></script>
+  <script src="js/form_js.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <!-- preventing selecting same theme multiple times -->
+  <script>
+    const selects = document.querySelectorAll('.select-group');
+    selects.forEach((elem) => {
+      elem.addEventListener('change', (event) => {
+        const values = Array.from(selects).map((select) => select.value);
+        for (const select of selects) {
+          select.querySelectorAll('option').forEach((option) => {
+            const value = option.value;
+            if (value &&  value !== select.value && values.includes(value)) {
+              option.style.display = "none";
+            } else {
+              option.style.display = "inline";
+            }
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.moreGallery-main {
+  background-color: black;
+}
+body {
+  background-image: url(https://images.unsplash.com/photo-1592071666760-421c34665779?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.moreGal-title-sec {
+  font-size: 50px;
+  background-color: white;
+}
+.moreGal-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 18px;
+  width: 100vw;
+}
+.moreGala-backButtn {
+  position: absolute;
+  padding: 20px;
+  font-size: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  margin: 5px;
+}
+.img-div1,
+.img-div2,
+.img-div3,
+.img-div4,
+.img-div5,
+.img-div6,
+.img-div7,
+.img-div8,
+.img-div9,
+.img-div10,
+.img-div11,
+.img-div12,
+.img-div13,
+.img-div14,
+.img-div15 {
+  transform: scale(0.6);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.img-div-appear {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media screen and (max-width: 500px) {
+  .moreGal-title {
+    font-size: 40px;
+  }
+
+  .moreGala-backButtn {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bs-css/bootstrap.css">
+  <link rel="stylesheet" href="css/form_new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/animate.css">
+  <title>Thank You</title>
+</head>
+<body>
+  <section id="thank-you">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 id="thank-text"></h1>
+        </div>
+        <div class="col-12 text-center">
+            <a href="index.html" class="btn btn-outline-secondary back-home">Back</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    window.onload = typeWriter;
+    var i = 0;
+    
+    var txt = "Thank you for participating in SEDS SPACE ARTS 2022";
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("thank-text").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+  <script src="js/wow.min.js"></script>
+</body>
+</html>

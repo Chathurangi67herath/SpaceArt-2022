@@ -1,0 +1,314 @@
+$formColor: rgb(8, 9, 94);
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form-1 {
+  .form-header {
+    background-color: $formColor;
+    color: #fff;
+    padding: 15px 0px;
+
+    .back-up-div {
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 100px;
+      .up-back {
+        color: #fff;
+        font-size: 50px;
+      }
+    }
+  }
+
+  .rules {
+    .form-txt-1 {
+      display: flex;
+      flex-direction: column;
+
+      .r {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        h6 {
+          margin: 5 0px 0px;
+        }
+        .ruleNo {
+          padding: 5px;
+          margin-right: 10px;
+          background-color: gold;
+        }
+      }
+
+      #time {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .form-pt-1 {
+    margin-top: 30px;
+    border-left: 1px solid $formColor;
+    padding-left: 50px;
+
+    #emailError,
+    #fnameError,
+    #countryError,
+    #divisionError {
+      color: red;
+      display: none;
+    }
+
+    .next {
+      display: flex;
+      justify-content: flex-end;
+
+      .nxt {
+        background-color: $formColor;
+        color: #fff;
+      }
+    }
+  }
+
+  .field {
+    border: 1px solid $formColor;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-1 {
+    .form-header {
+      .back-up-div {
+        display: none;
+      }
+    }
+    .form-pt-1 {
+      border-left: none;
+      padding-left: 0px;
+    }
+  }
+}
+
+// bellow section
+.form-2 {
+  #theme1Error,
+  #topic1Error,
+  #theme2Error,
+  #topic2Error,
+  #theme3Error,
+  #topic3Error {
+    color: red;
+    display: none;
+  }
+
+  .field {
+    border: 1px solid $formColor;
+  }
+
+  .file {
+    background-color: $formColor;
+    border-radius: 2px;
+  }
+
+  .select {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+    .img-name,
+    .img-name-2,
+    .img-name-3 {
+      display: flex;
+    }
+
+    #file1Error,
+    #file2Error,
+    #file3Error {
+      visibility: hidden;
+      color: red;
+    }
+  }
+  .prev {
+    padding-left: 50px;
+    padding-top: 30px;
+    .artwork {
+      width: 100%;
+      height: 90%;
+      border: 1px solid $formColor;
+      display: flex;
+      background-color: rgba(128, 128, 128, 0.37);
+      justify-content: center;
+      align-items: center;
+    }
+    .progress {
+      margin-top: 10px;
+      padding: 10px 5px;
+    }
+  }
+}
+
+.optional {
+  display: flex;
+  align-items: center;
+
+  .show-1,
+  .hidden-1 {
+    color: $formColor;
+  }
+}
+
+// modal
+#basicModal {
+  #close {
+    visibility: hidden;
+  }
+  #myProgress1,
+  #myProgress2,
+  #myProgress3 {
+    display: flex;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    background-color: grey;
+    margin: 3px 0px;
+
+    #myBar1,
+    #myBar2,
+    #myBar3 {
+      display: none;
+      width: 1%;
+      height: 30px;
+      background-color: $formColor;
+      margin: 5px 0px;
+
+      #up1,
+      #up2,
+      #up3 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      #val1,
+      #val2,
+      #val3 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form-2 {
+    .form-pt-2 {
+      margin-top: 30px;
+
+      .img-name,
+      .img-name-2,
+      .img-name-3 {
+        margin-top: 5px;
+        margin-left: -8px;
+        display: flex;
+      }
+    }
+
+    .prev {
+      margin-top: 30px;
+      padding-left: 10px;
+      padding-top: 30px;
+    }
+    .file {
+      margin-left: 0px;
+      background-color: white;
+    }
+  }
+}
+
+.optional {
+  margin-top: 20px;
+  margin-left: 50px;
+
+  .show-1,
+  .hidden-1 {
+    margin-left: 30px;
+    border: 1px solid $formColor;
+    padding: 0px 5px;
+  }
+}
+
+.agreement {
+  color: $formColor;
+  padding-top: 50px;
+  padding-left: 100px;
+
+  #agreementError {
+    display: none;
+    color: red;
+  }
+}
+
+@media (max-width: 768px) {
+  .agreement {
+    padding-left: 50px;
+  }
+}
+.submit-sec {
+  margin: 20px 0px;
+  .sub {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 75px;
+
+    .btn-submit,
+    .btn-back {
+      display: flex;
+      justify-content: center;
+      width: 20%;
+      background-color: $formColor;
+      color: #fff;
+      margin: 0px 5px;
+    }
+  }
+}
+
+#basicModal {
+  background-color: rgba(128, 128, 128, 0.699);
+}
+
+#art-work-2,
+#art-work-3 {
+  display: none;
+}
+
+/*------------
+-----------------------------------------------
+---------------Successful form-----------------
+-------------------------------------------------*/
+#thank-you {
+  background-image: url("../images/cover.png");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #thank-text {
+    color: #fff;
+    padding: 10px 0px 50px 0px;
+  }
+
+  .back-home {
+    background-color: yellow;
+    padding: 5px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+  }
+}

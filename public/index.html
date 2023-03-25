@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<title>SEDS SABRA - SPACE ARTS 2021</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!----------------------------------	STYLE SHEETS	------------------------------------------------------------->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
+		integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<!-- CUSTOM -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+	<!-- =========================
+     PRE LOADER       
+============================== -->
+	<div class="preloader">
+
+		<div class="sk-rotating-plane"></div>
+
+	</div>
+
+
+	<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+	<div  class="navbar navbar-fixed-top custom-navbar" role="navigation">
+		<div class="container">
+
+			<!-- navbar header -->
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">
+					<img style="width: 5vw; margin-bottom: 2px" src="images/navlogo.png">
+<!--					<span class="highlight">SEDS </span>SPACE ARTS-->
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a style="padding-right: 8px" href="#intro" class="smoothScroll">Home</a></li>
+					<li><a style="padding-right: 8px" href="#theme" class="smoothScroll">Theme</a></li>
+					<li><a style="padding-right: 8px" href="#time-line" class="smoothScroll">Timeline</a></li>
+					<li><a style="padding-right: 8px" href="#register" class="smoothScroll">Guidelines</a></li>
+					<li><a style="padding-right: 8px" href="#speakers" class="smoothScroll">Judges</a></li>
+					<li><a style="padding-right: 8px" href="#venue" class="smoothScroll">Prizes</a></li>
+					<li><a style="padding-right: 8px" href="#gallery-main" class="smoothScroll">Gallery</a></li>
+					<li><a style="padding-right: 8px" href="#contact-we" class="smoothScroll">Contact</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+<!--	Time-->
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("May 25, 2022 15:37:25").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Output the result in an element with id="demo"
+			document.getElementById("days").innerHTML = days;
+			document.getElementById("hours").innerHTML =hours;
+			document.getElementById("minutes").innerHTML =minutes;
+			document.getElementById("seconds").innerHTML = seconds;
+			// If the count down is over, write some text
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
+	<!-- =========================
+    INTRO SECTION   
+============================== -->
+	<video autoplay muted loop id="myVideo">
+		<source src="./video/mb.mp4" type="video/mp4">
+<!--		<div>Ishan</div>-->
+	</video>
+	<section id="intro" class="parallax-section content">
+		<div class="container">
+			<div class="row">
+        
+				<div class="">
+					<h1 class="wow fadeInUp" data-wow-delay="1.2s"><span class="highlight">SEDS</span> Space Arts 2<span class="highlight">K</span>22
+					</h1>
+					<h3 class="wow bounceIn" data-wow-delay="0.7s">REGISTRATION OPEN</h3>
+					<div class="mycenter">
+						<div class="regline"></div>
+					</div>
+
+					<div class="row mycenter">
+						<div class="">
+							<div class="row mycenter">
+								<div class="col-md-6 col-sm-6">
+									<div class="row mycenter">
+										<p class="highlight" style="font-size: 5vh" id="days"></p>
+									</div>
+									<div class="row mycenter">
+										<div>Days</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="row mycenter">
+								<div class="col-md-6 col-sm-6">
+									<div class="row">
+										<p class="highlight" style="font-size: 5vh" id="hours"></p>
+									</div>
+									<div class="row mycenter">
+										<div>Hours</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="row mycenter">
+								<div class="col-md-6 col-sm-6">
+									<div class="row">
+										<p class="highlight" style="font-size: 5vh" id="minutes"></p>
+									</div>
+									<div class="row mycenter">
+										<div>Minutes</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c">
+							<div class="row mycenter">
+								<div class="col-md-6 col-sm-6">
+									<div class="row mycenter">
+										<p class="highlight" style="font-size: 5vh" id="seconds"></p>
+									</div>
+									<div class="row mycenter">
+										<div>Seconds</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp"
+						data-wow-delay="1.8s">REGISTER HERE</a> -->
+					<a href="form.html" class="btn btn-lg btn-danger smoothScroll wow fadeInUp"
+						data-wow-delay="1.5s">SUBMIT NOW</a>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<!-- =========================
+    About SECTION   
+============================== -->
+<section class="about wow fadeInUp"  data-wow-delay="0.4s">
+
+	<div class="about-text">
+		<h3><span style="color: gold;">SEDS Space Arts 2021</span> | Global Art Competition</h3>
+		<p style="margin-top: 40px;">The SEDS Space Arts Competition 2021 is an art competition which will open up to both local and the international space enthusiastic artists who will compete under space related themes. This will be happening as a virtual event and also done according to the global community’s health and safety conditions because of the Covid-19 pandemic. Event will be held according to terms and conditions which are provided by the organizing committee with the supervision of panel of judges. </p>
+	</div>
+
+<div class="about-img">
+	<img src="images/Space Whale Modern Minimal Music Album Cover Art 1.png" alt="" class="img-responsive">
+</div>
+
+
+</section>
+	
+
+		
+	
+	<!-- =========================
+    THEME SECTION   
+============================== -->
+<section id="theme">
+
+
+<div class="cd-half-width second-slide" id="theme">
+	<div class="container">
+		<div class="row">
+			<div>
+				<div class=" second-content">
+							
+					<div class="section-title" style="padding-top: 60px;">
+						<h2>THEMES</h2>
+					</div>
+									<hr>
+					<div class="row wow fadeInUp" style="margin-right: 0 ; margin-left: 0;" data-wow-delay="0.4s">
+						<div class="col-md-4 col-sm-12 fimg"  style="margin-right: 7% ; margin-left: 0; padding-right: 10px;">
+							<img src="images/first contact.webp" >
+						</div>
+						<div class="col-md-8  " style="padding-right: 0px; margin-right: 0 ; margin-left: 0;">
+							<div class="right-about-text ftheme">
+								<h3>First Contact</h3>
+								<h5>What would it be like to meet the aliens for the first time?</h5>
+								<p>Are aliens real? We don't know for sure but we want to believe it. The
+									universe is a vast expanse and alien life is potent. The renowned science
+									writer Arthur C.Clake once said, "Two possibilities exist: Either we are
+									alone in the universe or we are not. Both are equally terrifying." Humans
+									have searched extraterrestrial life for more than a century and Drake's work
+									inspired it.
+								</p>
+								<p>
+									Furthermore, there many controversial pieces of evidence for alien life in
+									history. When first we meet those aliens in outer space, will we and they be
+									able to converse? Although there are enormous obstacles that would be
+									involved in establishing mutual contact with such beings. The first contact
+									would be benefit or harm for humanity.
+									Sometimes, they can become our closest friends in other planets.</p>
+							</div>
+						</div>
+						
+					</div>
+					<br>
+					<hr>
+					<div class="row wow fadeInUp" style="margin-right: 0 ; margin-left: 0;" data-wow-delay="0.4s">
+						<div class="col-md-4 col-sm-12 simg"  style="margin-right: 7% ; margin-left: 0%;">
+							<img src="images/the next stop.webp">
+						</div>
+
+						<div class="col-md-8 "  >
+							<div class="right-about-text stheme">
+								<h3>The Next Stop </h3>
+								<h5>What is the future of space travel going to look like?</h5>
+								<p>Humans have always wondered about the objects seen in the night sky. With the
+									development of technology, it became possible to send machines, animals and
+									the humans beyond Earth's atmosphere and into outer space. From here onwards
+									budding ideas on SPACE TRAVEL emerged. Space exploration had already
+									captured the minds of many people, not only of astronauts and scientists but
+									also of writers and artists.
+								</p>
+								<p>Space exploration has ignited the curiosity of mankind about the universe.
+									It has captured the world's attention since the origin of famous Space Race
+									between the Soviet Union and the US during the Cold War, which culminated in
+									the US landing the first humans on the moon in 1969.</p>
+								<p>Furthermore, there were so many important milestones achieved in the
+									history of space exploration. Currently emerged the concept of space
+									tourism, to experience space travel for recreational purposes such as a
+									journey to ISS (International Space Station) and interstellar travel (is in
+									its development stage).</p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<hr>
+					<div class="row wow fadeInUp" style="margin-right: 0 ; margin-left: 0;" data-wow-delay="0.4s">
+						<div class="col-md-4 col-sm-12 timg " style="margin-right: 7% ; margin-left: 0;" >
+							<img src="images/cosomos.webp" >
+						</div>
+						<div class="col-md-8 "  >
+							<div class="right-about-text ttheme">
+								<h3>Cosmos 2222 </h3>
+								<h5>What the future civilization could look like ?</h5>
+								<p> While the future cannot be predicted with certainty, present understanding
+									in
+									various scientific fields allows for the prediction of future civilization.
+									Special attention will be devoted to the methodological, economic,
+									sociological and medical aspects of the progress of civilization.</p>
+
+
+								<p>
+									There will come a time when we deplete the natural sources on Earth due to
+									the high population growth. And also there will be more environmental
+									pollution. Technology has the power to do many things much easier using
+									Robots. Rather than humans working with machines, automation is likely to
+									make some jobs redundant.</p>
+
+
+								<p>
+									As the world becomes ever more crowded, it will become
+									practically impossible to find a patch of land free from human presence.
+									Great minds have postulated that humanity must spread itself across multiple
+									planets to avoid being entirely wiped out by one natural disaster</p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<!-- =========================
+    TIMELINE SECTION   
+============================== -->
+<Section id="time-line" >
+	<div class = "container mt-4 con wow fadeInUp"  data-wow-delay="0.4s" style="padding-top: 60px">
+    
+        <h2 class="text-center">TIMELINE</h2>
+
+            <div id="top" class="col-md-12  mx-auto d-block text-center border border-warning border border-4" >
+                <i class="fa-solid fa-circle-play" ></i>
+                <h5 class="mt-2 headt"><B> SUBMISSIONS OPEN </B></h5>
+                <h6 class="headc" ><b>24TH FEB 22</b></h6>
+                <P class="headb"><small>VIRTUAL OPENING CEREMONY | <br>
+                SUBMISSION STARTS </small></P> <br>
+                <button id = "bbbt" class=" heads text-light bg-dark">  <a style="color: rgb(255, 255, 255);" href="form.html">SUBMIT NOW</a> </button>
+            </div>
+             
+                 <img src="./images/taily.svg" id="taily" class="tail"alt="" srcset="">
+                 <img src="./images/tailp.svg" id="tailp" class="tail"alt="" srcset="">
+                 <img src="./images/tailr.svg" id="tailr" class="tail"alt="" srcset="">
+           
+            <div id="mid" class="col-md-12 mx-auto d-block  text-center " >
+				<i class="fa-solid fa-bullhorn"></i>
+                <h5 class="mt-3 headt"><b>WINNERS ANNOUNCMENT </b></h5>
+               <h6 class="headc"><b>24TH FEB 22</b></h6>  
+                <p class="headb"><small>VIRTUAL OPENING CEREMONY | <br>
+                ANNOUNCING WINNERS </small></p>
+            </div>
+
+            <div id="end"class="col-md-12 mx-auto d-block text-center border border-danger border border-4" >
+				
+				<i class="fa-solid fa-circle-xmark"></i>
+                <h5 class="mt-2 headt"> <b>SUBMISSIONS CLOSE </b></h5>
+                <h6 class="headc"><B>24TH FEB 22 </B></h6>
+                <p class="headb"><small> SUBMISSION ENDS </small></p>
+              
+            </div>
+         
+        </div>
+    
+</Section>
+
+<!-- =========================
+   GUIDE LINES SECTION   
+============================== -->
+<section id="register" class="parallax-section">
+	<div class="container" style="padding-top: 40px;">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.4s">
+				<h2 class="text-center">Competition <span class="highlight">Guidelines</span></h2>
+				<p>The contestants are required to comply with individual artworks and conditions of
+					the
+					Contest Rules and Regulations, according to the below provisions.</p>
+
+				<!--Rules  -->
+				<ul>
+					<li class="list-item">
+						<h5><span class="number">1</span></h5>
+						<h5> Each participant needs to be registered individually. One contestant can submit either
+							one or a maximum of three artworks, but only one artwork should be submitted under
+							one theme.</h5>
+					</li>
+					<hr>
+					<li  class="list-item" >
+						<h5><span class="number">2</span></h5>
+						<h5>Open for any space enthusiast representing any university, school, institution or an
+							organization, who are within the age limits.</h5>
+					</li>
+					<hr>
+					<li  class="list-item">
+						<h5><span class="number">3</span></h5>
+						<h5>Anyone who is interested in both art & space can participate in the competition.
+						</h5>
+					</li>
+					<hr>
+					<li  class="list-item">
+						<h5><span class="number">4</span></h5>
+						<h5>Organizers reserve the right to cancel or amend all or any part of the competition
+							or
+							the terms & conditions. However, any changes to the terms & conditions will be
+							informed immediately. Also, the judge board reserve the right to disqualify a
+							contestant or cancel a submission any time.</h5>
+					</li>
+					<hr>
+					<li  class="list-item">
+						<h5><span class="number">5</span></h5>
+						<h5>By registering for this contest, you hereby agree to receive results on their
+							complication depending on their effort</h5>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<!-- =========================
+    Judge Panel SECTION   
+============================== -->
+<section id="speakers" class="parallax-section wow fadeInUp"  data-wow-delay="0.4s"">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12 wow fadeInUp"  data-wow-delay="0.4s">
+				<div class="section-title">
+					<h2>Panel of <span style="color: gold;">judges</span></h2>
+				</div>
+			</div>
+
+			<!-- Testimonial Owl Carousel section
+		================================================== -->
+			<div id="owl-speakers" class="owl-carousel ">
+
+
+						<!-- one judge -->
+							<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.4s">
+								<div class="judge-card">
+									<div class="judge-image">
+										<img src="images/c1.png" class="img-responsive" alt="profile1">
+									</div>
+									<div class="info">
+											<h5 style="font-weight: bold;">Ann Marry</h5>
+											<h6>Annimator</h6>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+											<div class="social">
+												<a href="http://google.com"><img src="images/fb.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/twi.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/inst.png" class="img-responsive" alt=""></a>
+											</div>
+									
+									</div>
+								</div> 
+							</div>
+
+							<!-- one judge -->
+							<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.4s">
+								<div class="judge-card">
+									<div class="judge-image">
+										<img src="images/c2.png" class="img-responsive" alt="profile1">
+									</div>
+									<div class="info">
+											<h5 style="font-weight: bold;">Ann Marry</h5>
+											<h6>Annimator</h6>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+											<div class="social">
+												<a href="http://google.com"><img src="images/fb.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/twi.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/inst.png" class="img-responsive" alt=""></a>
+											</div>
+									
+									</div>
+								</div> 
+							</div>
+
+							<!-- one judge -->
+							<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.4s">
+								<div class="judge-card">
+									<div class="judge-image">
+										<img src="images/c3.png" class="img-responsive" alt="profile1">
+									</div>
+									<div class="info">
+											<h5 style="font-weight: bold;">Ann Marry</h5>
+											<h6>Annimator</h6>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+											<div class="social">
+												<a href="http://google.com"><img src="images/fb.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/twi.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/inst.png" class="img-responsive" alt=""></a>
+											</div>
+									
+									</div>
+								</div> 
+							</div>
+
+							<!-- one judge -->
+							<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.4s">
+								<div class="judge-card">
+									<div class="judge-image">
+										<img src="images/c1.png" class="img-responsive" alt="profile1">
+									</div>
+									<div class="info">
+											<h5 style="font-weight: bold;">Ann Marry</h5>
+											<h6>Annimator</h6>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+											<div class="social">
+												<a href="http://google.com"><img src="images/fb.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/twi.png" class="img-responsive" alt=""></a>
+												<a href="http://google.com"><img src="images/inst.png" class="img-responsive" alt=""></a>
+											</div>
+									
+									</div>
+								</div> 
+							</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =========================
+    PRIZE SECTION   
+============================== -->
+<section id="venue" class="parallax-section wow fadeInUp"  data-wow-delay="0.4s"">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center"><span class="highlight">Prizes</span></h2>
+				<h4 style="margin-top: 30px; margin-bottom: 35px; font-weight: normal; color: white !important" >Winners will receive valuable
+					certificates & cash prizes worth LKR 50,000.<br>
+
+					Winners will be rewarded many more benefits free of charge in our important space-related
+					sessions & workshops for a particular period.</h4>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				<div class="work-wrapper">
+					<div class="price-inner">
+						<img src="images/trophy.png" alt="">
+						<h3 class="text-uppercase tm-work-h3">Winner</h3>
+						<h6 class="text-uppercase tm-work-h6">Division 1</h6>	
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				<div class="work-wrapper">
+					<div class="price-inner">
+						<img src="images/trophy.png" alt="">
+						<h3 class="text-uppercase tm-work-h3">Winner</h3>
+						<h6 class="text-uppercase tm-work-h6">Division 2</h6>	
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				<div class="work-wrapper">
+					<div class="price-inner">
+						<img src="images/trophy.png" alt="">
+						<h3 class="text-uppercase tm-work-h3">Winner</h3>
+						<h6 class="text-uppercase tm-work-h6">Division 3</h6>	
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+     gallery section     
+============================== -->
+<section  class="gallery-main wow fadeInUp"  data-wow-delay="0.4s" id="gallery-main">
+	<div class="gallery-title" style="padding-top: 50px;"><h2>GALLERY</h2></div>
+	<div id="gallery-imgs" class="slides">
+		<a href="mroeGallery.html" class="icon-arrow">
+			<i class="fas fa-chevron-right"></i>
+		</a>
+		<div id="photo1" class="imgs"><img id="img-sec1" class="img-sec img-sec-current" src="images/webp/1.webp" alt=""></div>
+		<div id="photo2" class="imgs"><img id="img-sec2" class="img-sec" src="images/webp/2.webp" alt=""></div>
+		<div id="photo3" class="imgs"><img id="img-sec3" class="img-sec" src="images/webp/3.webp" alt=""></div>
+		<div id="photo4" class="imgs"><img id="img-sec4" class="img-sec" src="images/webp/HMentArtboard-110.webp" alt=""></div>
+		<div id="photo5" class="imgs"><img id="img-sec5" class="img-sec" src="images/webp/HMentArtboard-113.webp" alt=""></div>
+		<a href="mroeGallery.html" class="seeMore">Expand Gallery</a>
+	</div>
+</section>
+
+<!-- =========================
+    Contact SECTION   
+============================== -->
+
+
+
+<section class="contactUs-main wow fadeInUp"  data-wow-delay="0.4s" id="contact-we">
+	<div class="contactUs-title" style="padding-top: 50px;">
+		<h2>CONTACT US</h2>
+	</div>
+	<div class="full-container">
+		<div class="form-sec">
+			<div class="form-title" style="font-size: 20px;">KEEEP IN TOUCH</div>
+			<div class="form-fields">
+				<form action="https://formsubmit.co/evok98deshon@gmail.com" method="POST">
+					<input type="text" name="name" placeholder="Name"><br>
+					<input type="text" name="email" placeholder="Email"><br>
+					<textarea name="message" cols="39.5" rows="5" placeholder="Description"></textarea><br>
+					<input class="submt" type="submit" value="submit">
+
+				</form>
+				</div>
+			
+			
+			<div class="icon-sec">
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fab fa-twitter-square"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+			</div>
+		</div>
+		<div class="contactUs-img-sec">
+			<img class="contactUs-img" src="https://images.unsplash.com/photo-1644531918658-efa78b0912e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="">
+		</div>
+	</div>
+</section>
+
+
+
+<!-- =========================
+    footer SECTION   
+============================== -->
+<footer class="footer wow fadeInUp"  data-wow-delay="0.2s">
+		<div class="logo">
+			<img src="images/logo-1.png" class="img-responsive" alt="">
+		</div>
+		<div class="site-link">
+			<h6>Copyright &copy; 2022 <span style="color: gold;"><a href="admin panel site/adminDashBoard.html">SEDS SABRA</a></span></h6>
+		</div>
+</footer>
+
+
+
+
+
+	<!-- Back top -->
+	<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+	<!-- =========================
+     SCRIPTS   
+============================== -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

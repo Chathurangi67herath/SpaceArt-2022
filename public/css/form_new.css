@@ -1,0 +1,409 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form-1 .form-header {
+  background-color: #08095e;
+  color: #fff;
+  padding: 15px 0px;
+}
+
+.form-1 .form-header .back-up-div {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.form-1 .form-header .back-up-div .up-back {
+  color: #fff;
+  font-size: 50px;
+}
+
+.form-1 .rules .form-txt-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-1 .rules .form-txt-1 .r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-1 .rules .form-txt-1 .r h6 {
+  margin: 5 0px 0px;
+}
+
+.form-1 .rules .form-txt-1 .r .ruleNo {
+  padding: 5px;
+  margin-right: 10px;
+  background-color: gold;
+}
+
+.form-1 .rules .form-txt-1 #time {
+  visibility: hidden;
+}
+
+.form-1 .form-pt-1 {
+  margin-top: 30px;
+  border-left: 1px solid #08095e;
+  padding-left: 50px;
+}
+
+.form-1 .form-pt-1 #emailError,
+.form-1 .form-pt-1 #fnameError,
+.form-1 .form-pt-1 #countryError,
+.form-1 .form-pt-1 #divisionError {
+  color: red;
+  display: none;
+}
+
+.form-1 .form-pt-1 .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form-1 .form-pt-1 .next .nxt {
+  background-color: #08095e;
+  color: #fff;
+}
+
+.form-1 .field {
+  border: 1px solid #08095e;
+}
+
+@media (max-width: 768px) {
+  .form-1 .form-header .back-up-div {
+    display: none;
+  }
+  .form-1 .form-pt-1 {
+    border-left: none;
+    padding-left: 0px;
+  }
+}
+
+.form-2 #theme1Error,
+.form-2 #topic1Error,
+.form-2 #theme2Error,
+.form-2 #topic2Error,
+.form-2 #theme3Error,
+.form-2 #topic3Error {
+  color: red;
+  display: none;
+}
+
+.form-2 .field {
+  border: 1px solid #08095e;
+}
+
+.form-2 .file {
+  background-color: #08095e;
+  border-radius: 2px;
+}
+
+.form-2 .select {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-2 .select .img-name,
+.form-2 .select .img-name-2,
+.form-2 .select .img-name-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-2 .select #file1Error,
+.form-2 .select #file2Error,
+.form-2 .select #file3Error {
+  visibility: hidden;
+  color: red;
+}
+
+.form-2 .prev {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.form-2 .prev .artwork {
+  width: 100%;
+  height: 90%;
+  border: 1px solid #08095e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.37);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-2 .prev .progress {
+  margin-top: 10px;
+  padding: 10px 5px;
+}
+
+.optional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.optional .show-1,
+.optional .hidden-1 {
+  color: #08095e;
+}
+
+#basicModal #close {
+  visibility: hidden;
+}
+
+#basicModal #myProgress1,
+#basicModal #myProgress2,
+#basicModal #myProgress3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  background-color: grey;
+  margin: 3px 0px;
+}
+
+#basicModal #myProgress1 #myBar1,
+#basicModal #myProgress1 #myBar2,
+#basicModal #myProgress1 #myBar3,
+#basicModal #myProgress2 #myBar1,
+#basicModal #myProgress2 #myBar2,
+#basicModal #myProgress2 #myBar3,
+#basicModal #myProgress3 #myBar1,
+#basicModal #myProgress3 #myBar2,
+#basicModal #myProgress3 #myBar3 {
+  display: none;
+  width: 1%;
+  height: 30px;
+  background-color: #08095e;
+  margin: 5px 0px;
+}
+
+#basicModal #myProgress1 #myBar1 #up1,
+#basicModal #myProgress1 #myBar1 #up2,
+#basicModal #myProgress1 #myBar1 #up3,
+#basicModal #myProgress1 #myBar2 #up1,
+#basicModal #myProgress1 #myBar2 #up2,
+#basicModal #myProgress1 #myBar2 #up3,
+#basicModal #myProgress1 #myBar3 #up1,
+#basicModal #myProgress1 #myBar3 #up2,
+#basicModal #myProgress1 #myBar3 #up3,
+#basicModal #myProgress2 #myBar1 #up1,
+#basicModal #myProgress2 #myBar1 #up2,
+#basicModal #myProgress2 #myBar1 #up3,
+#basicModal #myProgress2 #myBar2 #up1,
+#basicModal #myProgress2 #myBar2 #up2,
+#basicModal #myProgress2 #myBar2 #up3,
+#basicModal #myProgress2 #myBar3 #up1,
+#basicModal #myProgress2 #myBar3 #up2,
+#basicModal #myProgress2 #myBar3 #up3,
+#basicModal #myProgress3 #myBar1 #up1,
+#basicModal #myProgress3 #myBar1 #up2,
+#basicModal #myProgress3 #myBar1 #up3,
+#basicModal #myProgress3 #myBar2 #up1,
+#basicModal #myProgress3 #myBar2 #up2,
+#basicModal #myProgress3 #myBar2 #up3,
+#basicModal #myProgress3 #myBar3 #up1,
+#basicModal #myProgress3 #myBar3 #up2,
+#basicModal #myProgress3 #myBar3 #up3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#basicModal #myProgress1 #myBar1 #val1,
+#basicModal #myProgress1 #myBar1 #val2,
+#basicModal #myProgress1 #myBar1 #val3,
+#basicModal #myProgress1 #myBar2 #val1,
+#basicModal #myProgress1 #myBar2 #val2,
+#basicModal #myProgress1 #myBar2 #val3,
+#basicModal #myProgress1 #myBar3 #val1,
+#basicModal #myProgress1 #myBar3 #val2,
+#basicModal #myProgress1 #myBar3 #val3,
+#basicModal #myProgress2 #myBar1 #val1,
+#basicModal #myProgress2 #myBar1 #val2,
+#basicModal #myProgress2 #myBar1 #val3,
+#basicModal #myProgress2 #myBar2 #val1,
+#basicModal #myProgress2 #myBar2 #val2,
+#basicModal #myProgress2 #myBar2 #val3,
+#basicModal #myProgress2 #myBar3 #val1,
+#basicModal #myProgress2 #myBar3 #val2,
+#basicModal #myProgress2 #myBar3 #val3,
+#basicModal #myProgress3 #myBar1 #val1,
+#basicModal #myProgress3 #myBar1 #val2,
+#basicModal #myProgress3 #myBar1 #val3,
+#basicModal #myProgress3 #myBar2 #val1,
+#basicModal #myProgress3 #myBar2 #val2,
+#basicModal #myProgress3 #myBar2 #val3,
+#basicModal #myProgress3 #myBar3 #val1,
+#basicModal #myProgress3 #myBar3 #val2,
+#basicModal #myProgress3 #myBar3 #val3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .form-2 .form-pt-2 {
+    margin-top: 30px;
+  }
+  .form-2 .form-pt-2 .img-name,
+  .form-2 .form-pt-2 .img-name-2,
+  .form-2 .form-pt-2 .img-name-3 {
+    margin-top: 5px;
+    margin-left: -8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form-2 .prev {
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+  .form-2 .file {
+    margin-left: 0px;
+    background-color: white;
+  }
+}
+
+.optional {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.optional .show-1,
+.optional .hidden-1 {
+  margin-left: 30px;
+  border: 1px solid #08095e;
+  padding: 0px 5px;
+}
+
+.agreement {
+  color: #08095e;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.agreement #agreementError {
+  display: none;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .agreement {
+    padding-left: 50px;
+  }
+}
+
+.submit-sec {
+  margin: 20px 0px;
+}
+
+.submit-sec .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 75px;
+}
+
+.submit-sec .sub .btn-submit,
+.submit-sec .sub .btn-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  background-color: #08095e;
+  color: #fff;
+  margin: 0px 5px;
+}
+
+#basicModal {
+  background-color: rgba(128, 128, 128, 0.699);
+}
+
+#art-work-2,
+#art-work-3 {
+  display: none;
+}
+
+/*------------
+-----------------------------------------------
+---------------Successful form-----------------
+-------------------------------------------------*/
+#thank-you {
+  background-image: url("../images/cover.png");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#thank-you #thank-text {
+  color: #fff;
+  padding: 10px 0px 50px 0px;
+}
+
+#thank-you .back-home {
+  background-color: yellow;
+  padding: 5px 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: x-large;
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=form_new.css.map */

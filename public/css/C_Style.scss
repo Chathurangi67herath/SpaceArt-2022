@@ -1,0 +1,220 @@
+:root {
+    --color1: rgb(240, 247, 246) ;
+    --color2:gray;
+    --color3:rgb(8,9,94);
+    --color4:black;
+    --color5:white;
+  }
+  
+  /*!----------------------C_TotalSubmission-----------------------*/
+  
+  .first {
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--color1);
+    font-style: normal;
+  }
+  
+  .top {
+    background-color: var(--color2);
+    height: 180px;
+    width: 20%;
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-left: 6%;
+    margin-top: 6%;
+  }
+  
+  .top .top-text {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 350%;
+    font-weight: bold;
+    color: var(--color5);
+  }
+  
+  .bottom .left {
+    background-color: var(--color3);
+    width: 25%;
+    padding-top: 6%;
+    border: 5px solid var(--color4);
+  }
+  
+  .bottom .mid {
+    background-color: var(--color3);
+    width: 25%;
+    padding-top: 6%;
+    border: 5px solid var(--color4);
+  }
+  
+  .bottom .right {
+    background-color: var(--color3);
+    width: 25%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    border: 5px solid var(--color4);
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .top {
+      height: 100px;
+      width: 90%;
+      padding-top: 3px;
+      padding-bottom: 5px;
+    }
+    .bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 50px;
+      padding-left: 20%;
+      font-size: 50%;
+    }
+    .bottom .left {
+      width: 75%;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      border: 3px solid var(--color4);
+      margin-bottom: 30px;
+    }
+    .bottom .mid {
+      width: 75%;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      border: 3px solid var(--color4);
+      margin-bottom: 30px;
+    }
+    .bottom .right {
+      width: 75%;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      border: 3px solid var(--color4);
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .top {
+      font-size: 150%;
+    }
+    .bottom {
+      font-size: 200%;
+    }
+  }
+  
+  
+  
+  /*----------------------C_AdminLogin-----------------------*/
+  
+  .login {
+    background-color: var(--color2);
+    padding-top: 2%;
+    padding-bottom: 12%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+    background-color: var(--color3);
+    margin-left: 30%;
+    margin-top: 6%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    border: 5px solid var(--color4);
+  }
+  
+  .title {
+    color: var(--color1);
+    margin-top: 10%;
+    font-size: 300%;
+  }
+  
+  .name {
+    margin-top: 10%;
+  }
+  
+  .name .nm {
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .password {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  
+  .password .ps {
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .btn .button {
+    background-color: var(--color4);
+    color: var(--color5);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .main {
+      width: 75%;
+      margin-left: 12%;
+      border: 3px solid var(--color4);
+    }
+    .title {
+      font-size: 200%;
+    }
+    .name .nm {
+      width: 200px;
+    }
+    .password .ps {
+      width: 200px;
+    }
+    .btn .button {
+      font-size: 15px;
+      padding: 10px 20px;
+    }
+  }
+  
+  /*# sourceMappingURL=C_Style.css.map */
